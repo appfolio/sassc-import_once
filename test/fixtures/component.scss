@@ -1,0 +1,10 @@
+@import "component/button";
+@import "component/color";
+
+.text {
+  color: $text-color;
+}
+
+.button {
+  color: $button-default-text-color;
+}
