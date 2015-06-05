@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = SassC::ImportOnce::VERSION
   spec.authors       = ["Paul Kmiec"]
   spec.email         = ["paul.kmiec@appfolio.com"]
-  spec.summary       = %q{Changes the behavior of Sass's @import directive to only import a file once.}
-  spec.description   = %q{Changes the behavior of Sass's @import directive to only import a file once.}
+  spec.summary       = %q{Changes the behavior of Sassc's @import directive to only import a file once.}
+  spec.description   = %q{Changes the behavior of Sassc's @import directive to only import a file once.}
   spec.homepage      = "https://github.com/appfolio/sassc-import_once"
   spec.license       = "MIT"
 

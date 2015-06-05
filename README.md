@@ -1,13 +1,13 @@
 # SassC::ImportOnce
 
-TODO: Write a gem description
+Changes the behavior of Sassc's @import directive to only import a file once. This is very similar to the functionality provided by https://github.com/Compass/compass/tree/master/import-once for Sass.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'sassc-import_once'
+gem 'sassc-import_once', :require => 'sassc/import_once/activate'
 ```
 
 And then execute:
