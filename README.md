@@ -1,4 +1,6 @@
 # SassC::ImportOnce
+[![Gem Version][gem-badge]][gem]
+[![Build status][build-badge]][build]
 
 Changes the behavior of Sassc's @import directive to only import a file once. This is very similar to the functionality provided by https://github.com/Compass/compass/tree/master/import-once for Sass.
 
@@ -29,3 +31,9 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+[gem-badge]:      https://badge.fury.io/rb/sassc-import_once.svg
+[gem]:            http://badge.fury.io/rb/sassc-import_once
+[build-badge]:    https://travis-ci.org/appfolio/sassc-import_once.svg
+[build]:          https://travis-ci.org/appfolio/sassc-import_once
+
