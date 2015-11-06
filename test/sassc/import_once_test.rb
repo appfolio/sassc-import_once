@@ -6,25 +6,25 @@ module SassC
   class ImportOnceTest < Minitest::Test
     FIXTURES_DIR = File.expand_path('../../fixtures',  __FILE__)
 
-    # def test_basic
-    #   assert_compilation_result('basic')
-    # end
-    #
-    # def test_force_import_first
-    #   assert_compilation_result('force_import_first')
-    # end
-    #
-    # def test_force_import_last
-    #   assert_compilation_result('force_import_last')
-    # end
-    #
-    # def test_with_globbing
-    #   assert_compilation_result('with_globbing')
-    # end
-    #
-    # def test_with_lots_globbing
-    #   assert_compilation_result('with_lots_globbing')
-    # end
+    def test_basic
+      assert_compilation_result('basic')
+    end
+
+    def test_force_import_first
+      assert_compilation_result('force_import_first')
+    end
+
+    def test_force_import_last
+      assert_compilation_result('force_import_last')
+    end
+
+    def test_with_globbing
+      assert_compilation_result('with_globbing')
+    end
+
+    def test_with_lots_globbing
+      assert_compilation_result('with_lots_globbing')
+    end
 
     def test_component
       assert_compilation_result('component')

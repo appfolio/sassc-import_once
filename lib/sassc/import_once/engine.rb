@@ -11,7 +11,6 @@ module SassC
       private
       
       def with_import_once(css_filename)
-        p "--- #{css_filename} ---"
         if @options[:importer] && !@options[:importer].is_a?(SassC::ImportOnce::Importer)
           @options[:importer].send(:prepend, SassC::ImportOnce::Importer)
         end
@@ -19,7 +18,6 @@ module SassC
         SassC::ImportOnce.import_tracker[css_filename] = Set.new
         yield
       ensure
-        p "=== #{css_filename} ==="
         SassC::ImportOnce.import_tracker.delete(css_filename)
       end
       

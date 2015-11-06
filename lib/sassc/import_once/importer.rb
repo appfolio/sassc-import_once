@@ -3,7 +3,6 @@ module SassC
     module Importer
       
       def imports(path, parent_path)
-        puts "imports\t#{path} #{parent_path}"
         path, force_import = handle_force_import(path)
         reject_already_imported_imports(super(path, parent_path), force_import)
       end
@@ -23,14 +22,7 @@ module SassC
         
         imports = [ imports ] unless imports.is_a?(Enumerable)
         imports.reject do |import|
-          reject = reject_already_imported_import(import, force_import)
-          puts "\t#{import.path} => #{reject}"
-          reject
-          # if reject
-          #   import = SassC::Importer::Import.new(import.path, source: "")
-          # end
-          #
-          # import
+          reject_already_imported_import(import, force_import)
         end
       rescue => e
         puts e
