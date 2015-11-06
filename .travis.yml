@@ -1,4 +1,7 @@
 language: ruby
+cache: bundler
+sudo: false
+
 rvm:
   - 2.1.5
   - 2.2.3
@@ -6,4 +9,6 @@ rvm:
 gemfile:
   - gemfiles/sassc_1.8.0.gemfile
   - gemfiles/sassc_1.8.1.gemfile
+
+script: 'bundle exec rake'
 
