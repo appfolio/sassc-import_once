@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  title: sassc-import_once
+  description: Changes the behavior of Sassc's @import directive to only import a file once.
+  tags: []
+  annotations:
+    appfolio.com/package-location: https://rubygems.org/gems/sassc-import_once
+    appfolio.com/package-type: gem
+    circleci.com/project-slug: github/appfolio/sassc-import_once
+  name: sassc-import-once
+spec:
+  type: library
+  lifecycle: maintenance
+  owner: engineering
